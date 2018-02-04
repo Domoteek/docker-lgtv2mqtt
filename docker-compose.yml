@@ -1,0 +1,10 @@
+version: '2'
+services:
+  lgtv2mqtt:
+    build: .
+    environment:
+    - lgtv2mqtt_v=${lgtv2mqtt_v}
+    - lgtv2mqtt_n=${lgtv2mqtt_n}
+    - lgtv2mqtt_t=${lgtv2mqtt_t}
+    - lgtv2mqtt_u=${lgtv2mqtt_u}
+    restart: always
